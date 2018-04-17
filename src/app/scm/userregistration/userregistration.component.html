@@ -1,0 +1,62 @@
+<div class="example-sidenav-content">
+    <mat-toolbar>Users</mat-toolbar>
+  </div>
+  
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <mat-card>
+          <div class="row">
+            <div class="col-md-8 text-left perso">
+              <h4>User Registration:</h4>
+            </div>
+            <div class="col-md-4 text-right">
+               <a  class="btn btn-primary" >SAVE</a>
+            </div>
+          </div>
+          <hr>
+          <div class="row textfield">
+            <div class="col-md-6">
+               <mat-form-field class="textfield1">
+                   <input matInput placeholder="Name" [formControl]="name" required>
+                   <mat-error *ngIf="name.invalid">{{getnameError()}}</mat-error>
+                 </mat-form-field>
+            </div>
+            <div class="col-md-3">
+               <mat-form-field class="textfield2">
+                   <input matInput placeholder="Phone-no" [formControl]="mobile" required>
+                   <mat-error *ngIf="mobile.invalid">{{getphnnoError()}}</mat-error>
+                 </mat-form-field>
+            </div>
+            <div class="col-md-3 ">
+               <mat-form-field class="textfield2">
+                   <input matInput placeholder="Email" [formControl]="email" required>
+                   <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+                 </mat-form-field>
+            </div>
+           </div>
+
+           <div class="row">
+             <div class="col-md-6">
+              <mat-form-field class="textfield1">
+                <input matInput placeholder="Enter your password" [type]="hide ? 'password' : 'text'" [formControl]="pass" required>
+                <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility' : 'visibility_off'}}</mat-icon>
+                <mat-error *ngIf="pass.invalid">{{getpassError()}}</mat-error>
+              </mat-form-field>
+             </div>
+
+             <div class="col-md-6">
+              <mat-form-field class="textfield1">
+                <input matInput placeholder="Confirm Your Password" [type]="hide1 ? 'password' : 'text'" [formControl]="pass1" required>
+                <mat-icon matSuffix (click)="hide1 = !hide1">{{hide1 ? 'visibility' : 'visibility_off'}}</mat-icon>
+                <mat-error *ngIf="pass1.invalid">{{getpass1Error()}}</mat-error>
+              </mat-form-field>
+             </div>
+           </div>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+            
+    
+<router-outlet></router-outlet>

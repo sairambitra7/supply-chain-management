@@ -1,0 +1,34 @@
+.mat-toolbar{
+  width: 100%;
+  height: 56px;
+  background-color: #ffffff;
+  /* box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.24), 0 0 4px 0 rgba(0, 0, 0, 0.12); */
+}
+.mat-card{
+  margin-top: 15px;
+}
+.perso{
+color: blue;
+}
+
+.btn-primary{
+  /* background-color: green; */
+  width: 106px;
+height: 30px;
+background-color: #34a853;
+}
+
+.textfield{
+  width: 103%;
+}
+
+.textfield1{
+  width: 103%;
+}
+.textfield2{
+  width: 100%;
+}
+
+.example-full-width{
+  width: 100%;
+}

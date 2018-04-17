@@ -1,3 +1,54 @@
-<p>
-  dashboard works!
-</p>
+<mat-drawer-container class="example-container" autosize>
+  <mat-drawer-container>
+    <div class="example-sidenav-content">
+        <i class="material-icons" (click)="drawer.toggle()">view_headline</i>
+      </div>
+      
+          
+          
+        </mat-drawer-container>  
+        <router-outlet></router-outlet>  
+          
+
+        <mat-drawer #drawer class="example-sidenav" mode="side">
+          <div class="logoimg">
+            <img src="/assets/logowhite.svg">
+          </div>
+
+
+    <div class="view">
+      <div class="edit1">
+        <a routerLink="./dashboardhome">
+          <i class="material-icons">perm_data_setting</i>
+            <span> Dashboard </span>
+        </a>
+        <br>
+      </div>
+      <div class="edit2">
+        <a routerLink="./users">
+          <i class="material-icons">view_headline</i>
+          <span>Users</span>
+        </a>
+        <br>
+      </div>
+      <div class="edit3">
+        <a routerLink="./calender">
+          <i class="material-icons">view_headline</i>
+          <span>calender</span>
+        </a>
+        <br>
+      </div>
+      <div class="edit4">
+        <a routerLink="./products">
+          <i class="material-icons">view_headline</i>
+          <span>products</span>
+        </a>
+        <br>
+      </div>
+    </div>
+
+
+  </mat-drawer>
+
+
+</mat-drawer-container>

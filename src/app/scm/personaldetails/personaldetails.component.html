@@ -1,0 +1,111 @@
+<div class="example-sidenav-content">
+  <mat-toolbar>Users</mat-toolbar>
+</div>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12">
+    <mat-card>
+      <div class="row">
+         <div class="col-md-8 text-left perso">
+           <h4>Personal Details:</h4>
+         </div>
+         <div class="col-md-4 text-right">
+            <a  class="btn btn-primary" >SAVE</a>
+         </div>
+         <hr>
+         <div class="row textfield">
+           <div class="col-md-6">
+              <mat-form-field class="textfield1">
+                  <input matInput placeholder="Name" [formControl]="name" required>
+                  <mat-error *ngIf="name.invalid">{{getnameError()}}</mat-error>
+                </mat-form-field>
+           </div>
+           <div class="col-md-3">
+              <mat-form-field class="textfield2">
+                  <input matInput placeholder="Phone-no" [formControl]="phnno" required>
+                  <mat-error *ngIf="phnno.invalid">{{getphnnoError()}}</mat-error>
+                </mat-form-field>
+           </div>
+           <div class="col-md-3 ">
+              <mat-form-field class="textfield2">
+                  <input matInput placeholder="Email" [formControl]="email" required>
+                  <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+                </mat-form-field>
+           </div>
+          </div>
+
+          <div class="row textfield">
+            <div class="col-md-3">
+                <mat-form-field class="textfield2">
+                    <mat-select placeholder="Community" [formControl]="community" required>
+                        <mat-option value="option">Option</mat-option>
+                    </mat-select>
+                    <mat-error *ngIf="community.invalid">{{getcomError()}}</mat-error>
+                  </mat-form-field>
+                      
+                    
+            </div>
+
+            <div class="col-md-3">
+
+                <mat-form-field class="textfield2">
+                    <mat-select placeholder="Sub-Community" [formControl]="subcommunity" required>
+                      <mat-option value="option">Option</mat-option>
+                    </mat-select>
+                    <mat-error *ngIf="subcommunity.invalid">{{getsubcomError()}}</mat-error>
+                  </mat-form-field>
+                  </div>
+                    
+
+                  <div class="col-md-3">
+                      <mat-form-field class="textfield2">
+                          <input matInput placeholder="Flat-No" [formControl]="flatno" required>
+                          <mat-error *ngIf="flatno.invalid">{{getflatnoError()}}</mat-error>
+                        </mat-form-field>
+                      </div>      
+                    </div>
+
+                    <div class="row textfield">
+                        
+                            <div class="col-md-3">
+                                <mat-form-field class="example-full-width" >
+                                  <input matInput placeholder="Locality" [formControl]="locality" required>
+                                  <mat-error *ngIf="locality.invalid">{{getlocError()}}</mat-error>
+                                </mat-form-field>
+                                </div>
+                            <div class="col-md-3">
+                                <mat-form-field class="example-full-width" >
+                                    <input matInput placeholder="City" [formControl]="city" required>
+                                    <mat-error *ngIf="city.invalid">{{getcityError()}}</mat-error>
+                                  </mat-form-field>
+                            
+                            </div>
+                            <div class="col-md-3">
+                            <mat-form-field class="example-full-width" >
+                              <input matInput placeholder="State" [formControl]="state" required>
+                              <mat-error *ngIf="state.invalid">{{getstateError()}}</mat-error>
+                            </mat-form-field>
+                          </div>
+                          <div class="col-md-3">
+                            <mat-form-field class="example-full-width">
+                              <input matInput #postalCode maxlength="7" placeholder="Postal Code" value="" [formControl]="postal" required>
+                              <mat-hint align="end">{{postalCode.value.length}} / 7</mat-hint>
+                              <mat-error *ngIf="postal.invalid">{{getpostError()}}</mat-error>
+                            </mat-form-field>
+                          </div>
+                          
+                    </div>
+
+                  
+          
+
+          
+         
+        </div>
+
+      
+    </mat-card>
+    </div>
+    </div>
+    </div>
+<router-outlet></router-outlet>
