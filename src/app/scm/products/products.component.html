@@ -1,4 +1,101 @@
-<p>
+<!-- <p>
   products works!
-</p>
+</p> -->
+<div class="example-sidenav-content">
+  <mat-toolbar>Products</mat-toolbar>
+</div>
+<div class="input-group">
+  <i class="material-icons">search</i>
+  <input class="form-control"  placeholder="Name,Address,Ph.no">
+  </div>
+
+  
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-4">
+      <mat-card>
+        <div class="row">
+          <div class="col-md-4 image">
+            <img src="/assets/milk.png">
+          </div>
+          
+              <div class="col-md-4 middle">
+                <h6><b>Full Cream Milk</b></h6>
+                <p>Heritage</p>
+              
+              </div>
+              <div class="col-md-4 last">
+                  <i class="material-icons icon">create</i>
+              </div>
+    </div>
+    <hr>
+    <div class="row">
+        <form class="example-form">
+            <mat-form-field class="example-full-width">
+              <input matInput type="text" value="1 Litre">
+            </mat-form-field>
+            <mat-form-field class="example-full-width">
+                <input matInput type="text" value="$ 45">
+              </mat-form-field>
+            </form>
+          </div>
+          <div class="row">
+              <form class="example-form">
+                  <mat-form-field class="example-full-width">
+                    <input matInput type="text" value="500 ml">
+                  </mat-form-field>
+                  <mat-form-field class="example-full-width">
+                      <input matInput type="text" value="$ 23">
+                    </mat-form-field>
+                  </form>
+                </div>
+  </mat-card>
+</div>
+  
+<div class="col-md-4">
+  <mat-card>
+      <div class="row">
+        <div class="col-md-4 image">
+          <img src="/assets/milk.png">
+        </div>
+        
+            <div class="col-md-4 middle">
+              <h6><b>Full Cream Milk</b></h6>
+              <p>Heritage</p>
+            
+            </div>
+            <div class="col-md-4 last">
+                <i class="material-icons" (click)="onSelect('hello')">check_circle</i>
+            </div>
+  </div>
+  <hr>
+  <div class="row">
+      <form class="example-form">
+          <mat-form-field class="example-full-width">
+            <input matInput type="text" value="1 Litre">
+          </mat-form-field>
+          <mat-form-field class="example-full-width">
+              <input matInput type="text" value="$ 45">
+            </mat-form-field>
+          </form>
+          </div>
+          <div class="row">
+          <form class="example-form">
+              <mat-form-field class="example-full-width">
+                <input matInput type="text" value="1 Litre">
+              </mat-form-field>
+              <mat-form-field class="example-full-width">
+                  <input matInput type="text" value="$ 45">
+                </mat-form-field>
+              </form>
+            </div>
+
+</mat-card>
+      </div>
+          
+        
+
+</div>
+</div> 
 <router-outlet></router-outlet> 

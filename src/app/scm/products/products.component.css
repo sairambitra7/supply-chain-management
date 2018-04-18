@@ -1,0 +1,29 @@
+img{
+    height: 68px;
+    width: 68px;
+}
+.middle h6{
+    font-size: 14px;
+}
+.middle span{
+    font-size: 12px;
+    color: rgba(171, 164, 163, 1);
+}
+.sub h6{
+    font-size: 22px;
+}
+.material-icons{
+    float: right;
+    cursor: pointer;
+    color: #fbbc05;
+    
+}
+.icon{
+    border-radius: 13px;
+    background-color: #fbbc05;
+    
+    color: white;
+}
+.example-full-width{
+    width: 150px;
+}

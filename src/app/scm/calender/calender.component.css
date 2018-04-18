@@ -2,3 +2,36 @@ img{
     height: 68px;
     width: 68px;
 }
+.middle h6{
+    font-size: 14px;
+}
+.middle span{
+    font-size: 12px;
+    color: rgba(171, 164, 163, 1);
+}
+.sub h6{
+    font-size: 22px;
+}
+/* .mat-card{
+    margin: 10px;
+} */
+
+.row{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.last{
+    margin-top: 59px;
+}
+.mat-form-field{
+    float: right;
+    width: 160px;
+    height: 45px;
+    border-radius: 100px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.24)
+}
+/* ::ng-deep .mat-form-field-underline{
+    height: 0px !important;
+} */

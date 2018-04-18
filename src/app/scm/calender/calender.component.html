@@ -6,30 +6,49 @@
 </div>
 <div class="input-group">
   <i class="material-icons">search</i>
-  <input class="form-control" placeholder="Name,Address,Ph.no">
+  <input class="form-control"  placeholder="Name,Address,Ph.no">
   </div>
+
   <div class="container-fluid">
     <div class="row">
-      <div class="col-md-4">
+      <div class="col-md-6 sub">
+        <h6><b>Milk Subscription Details</b></h6>
+      </div>
+
+      <div class="col-md-6 sub1">
+        <mat-form-field>
+          <input matInput [matDatepicker]="picker" placeholder="Choose a date">
+          <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+          <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-4" *ngFor="let item of list">
       <mat-card>
         <div class="row">
-          <div class="col-md-3 image">
-            <img src="/assets/milk.png">
+          <div class="col-md-4 image">
+            <img src={{item.imagepath}}>
           </div>
           
-              <div class="col-md-6 ">
-                
+              <div class="col-md-4 middle">
+                <h6><b>{{item.title}}</b></h6>
+                <p>{{item.brand}}</p>
+                <span>{{item.packs}}</span>
               </div>
-
-              
-                  <div class="col-md-3 ">
-                    
-                  </div>
-        </div>
+              <div class="col-md-4 last">
+                <h5><b>{{item.price}}</b></h5>
+              </div>
+    </div>
+  </mat-card>
+</div>
+</div>
+</div>        
+                  
       
-        </mat-card>
-        </div>
-        </div>
-        </div>
+        
         
 <router-outlet></router-outlet> 

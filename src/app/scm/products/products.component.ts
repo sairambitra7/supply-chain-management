@@ -11,5 +11,9 @@ export class ProductsComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  onSelect(message){
+    alert(message);
+    
+    
+  }
 }

@@ -10,6 +10,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import {MatSelectModule} from '@angular/material/select';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { MatDatepickerModule } from '@angular/material/datepicker';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { UsersComponent } from './users/users.component';
 import { CalenderComponent } from './calender/calender.component';
@@ -17,6 +18,9 @@ import { ProductsComponent } from './products/products.component';
 import { DashboardhomeComponent } from './dashboardhome/dashboardhome.component';
 import { PersonaldetailsComponent } from './personaldetails/personaldetails.component';
 import { UserregistrationComponent } from './userregistration/userregistration.component';
+import {MatNativeDateModule,  } from '@angular/material';
+
+
 
 import { CalenderService } from '../scm/calender/calender.service'
 import { DashboardService } from '../scm/dashboard/dashboard.service'
@@ -70,6 +74,8 @@ const routes: Routes = [
     MatFormFieldModule,
     MatInputModule,
     FormsModule, ReactiveFormsModule,
+    MatDatepickerModule,
+    MatNativeDateModule
     
   ],
   providers: [CalenderService,DashboardService,ProductsService,UsersService],
